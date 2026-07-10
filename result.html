@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>ISO Comparison</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Unified Standard Comparator</h1>
+
+<h2>Overall Similarity</h2>
+
+<h1 style="color:green">
+{{ similarity }} %
+</h1>
+
+<table>
+
+<tr>
+
+<th>Clause</th>
+
+<th>Similarity</th>
+
+</tr>
+
+{% for row in comparison %}
+
+<tr>
+
+<td>{{ row.clause }}</td>
+
+<td>{{ row.similarity }} %</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+
+</html>

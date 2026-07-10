@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Standard Comparator</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Unified Standard Comparator</h1>
+
+    <p class="subtitle">
+        Compare ISO Standard Documents
+    </p>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+
+        <div class="upload-box">
+
+            <label>Upload Standard 1</label>
+
+            <input
+                type="file"
+                name="file1"
+                accept=".pdf,.docx"
+                required>
+
+        </div>
+
+        <div class="upload-box">
+
+            <label>Upload Standard 2</label>
+
+            <input
+                type="file"
+                name="file2"
+                accept=".pdf,.docx"
+                required>
+
+        </div>
+
+        <button type="submit">
+            Compare Documents
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
