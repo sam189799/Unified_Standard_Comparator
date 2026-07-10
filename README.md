@@ -1,1 +1,1 @@
-# Unified_Standard_Comparator
+Unified Standard Comparator Using Python (ISO Standards) is a Python-based application that compares documents, product specifications, or reports against ISO standards. It identifies matching and missing requirements, calculates a compliance score, and generates a detailed comparison report.
